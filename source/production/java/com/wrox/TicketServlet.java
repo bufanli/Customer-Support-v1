@@ -239,7 +239,7 @@ public class TicketServlet extends HttpServlet
         }
 
         Attachment attachment = new Attachment();
-        attachment.setName(filePart.getSubmittedFileName());
+        attachment.setName(filePart.getName());
         attachment.setContents(outputStream.toByteArray());
 
         return attachment;
